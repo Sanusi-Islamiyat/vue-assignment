@@ -24,7 +24,6 @@
       <p class="to-you">Oh Toddles! My little gift to you</p>
     </div>
 
-    <!-- Change TodosList to TodoList -->
     <TodoList />
     
     <router-view />
@@ -33,12 +32,12 @@
 
 <script>
 import { useRouter } from 'vue-router';
-import TodoList from "./TodoList.vue";  // Import TodoList (not TodosList)
+import TodoList from "./TodoList.vue";  
 
 export default {
   name: 'Layout',
   components: {
-    TodoList,  // Register TodoList component
+    TodoList, 
   },
   setup() {
     const router = useRouter();

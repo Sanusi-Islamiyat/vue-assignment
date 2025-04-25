@@ -78,5 +78,5 @@ const handleClose = () => {
 </script>
 
 <style scoped>
-@import './TodoDetailsModal.css'; /* or inline your styles if preferred */
+@import './TodoDetailsModal.css'; 
 </style>
