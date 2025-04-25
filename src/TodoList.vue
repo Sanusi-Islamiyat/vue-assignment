@@ -91,7 +91,7 @@ export default {
     const editingTodo = ref(null);
     const itemsPerPage = 10;
 
-    // Fetch todos from API or localStorage
+
     onMounted(() => {
       fetchTodos()
         .then((data) => {
@@ -106,7 +106,7 @@ export default {
         });
     });
 
-    // Watch query, filter, and todos to update filteredTodos
+  
     watch([query, filter, todos], () => {
       const filtered = todos.value.filter((todo) => {
         const matchesQuery = todo.title.toLowerCase().includes(query.value.toLowerCase());
@@ -191,5 +191,5 @@ export default {
 </script>
 
 <style scoped>
-@import './TodoList.css'; /* Optional, ensure CSS is scoped for this component */
+@import './TodoList.css'; 
 </style>
