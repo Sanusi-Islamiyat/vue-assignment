@@ -1,0 +1,20 @@
+<template>
+  <div>
+    <h1>Todos</h1>
+    <button @click="fetchTodos">Fetch Todos</button>
+
+    <div v-if="error">
+      <p>Error: {{ error }}</p>
+    </div>
+
+    <ul v-if="todos.length">
+      <li v-for="todo in todos" :key="todo.id">{{ todo.title }}</li>
+    </ul>
+  </div>
+</template>
+
+<script setup>
+import { useTodos } from './useTodos';
+
+const { todos, error, fetchTodos } = useTodos();
+</script>

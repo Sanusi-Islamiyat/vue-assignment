@@ -1,0 +1,177 @@
+.todos-container {
+  
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    margin-inline-start: 370px;
+    position: relative;
+    
+    
+    
+  }
+  
+
+  .todos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  
+
+  .todo-item {
+    padding: 16px 20px;
+    width: 970px;
+    background-color: transparent;
+    border-radius: 12px;
+    color: #4A3434;
+    border: 0.2px solid #C990AB;
+    margin-inline-start: -10px;
+    text-align: left;
+
+  } 
+  
+
+  .todo-item:hover,
+.todo-item:focus {
+  animation: floating 3s ease-in-out infinite, colorChange 4s linear infinite;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  outline: none; /* Removes default outline on focus */
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(45deg,#c990ab, #4a3434);
+  }
+  25% {
+    background: linear-gradient(45deg, #d8a6b8, #5c3e37);
+  };
+  50% {
+    background: linear-gradient(45deg,#e4b2c5, #6d4b3b);
+  }
+  75% {
+    background: linear-gradient(45deg, #d8a6b8, #5c3e37);
+  }
+  100% {
+    background: linear-gradient(45deg, #c990ab, #4a3434);
+  }
+}
+  
+.page-cont {
+  display: flex;
+ flex-direction: row;
+  gap: 20px;
+  justify-content:  baseline;
+  align-items: baseline;
+  margin-inline-start: 300px;
+  margin-block-start: 90px;
+}
+
+.prev, .next {
+  border: 2px solid #C990AB;
+  background: transparent;
+  color: #4A3434;
+  padding: 10px 20px;
+}
+
+
+.page-num {
+  color: #4A3434;
+  font-weight: bold;
+}
+
+
+
+
+
+.page-cont .prev:focus,
+.page-cont .next:focus {
+ outline: none;
+  border: none;
+  box-shadow: 0 0 1px #C990AB;
+  background-color: #806464;
+  color: #ffffff;
+}
+
+.page-cont .prev:active,
+.page-cont .next:active {
+  background: linear-gradient(to right, #4A3434, #C990AB); 
+  color: #ffffff;
+  outline: none; 
+  border: none;
+  transition: 0.7s;
+  
+}
+
+
+.page-cont .prev:hover,
+.page-cont .next:hover {
+ background-color: #C990AB;
+  border: none;
+outline: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.filter-dropdown select {
+  padding: 8px;
+  border: 1px solid #C990AB;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #4A3434;
+  font-size: 14px;
+  margin-inline-start: 880px;
+}
+
+.filter-dropdown {
+  margin-top: 20.5px;
+
+
+}
+
+.create-todo-button {
+background: linear-gradient(to right, #4A3434, #C990AB); 
+justify-content: center;
+align-items: center;
+    display: flex;
+    content: bold;
+    border-radius: 50%;
+    color: #ffffff;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    border: none;
+
+   
+}
+
+.edit-button{
+  background-color: transparent;
+  position: absolute;
+  right: 100px;
+  margin-bottom: 20px;
+ 
+ 
+}
+
+.delete-button {
+  background-color: transparent;
+  position: absolute;
+  right: 50px;
+}

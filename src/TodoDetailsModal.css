@@ -1,0 +1,13 @@
+.close-button {
+    background-color: transparent;
+    border: 1px solid #C990AB;
+    color: #4A3434;
+}
+
+
+.mark-complete-button {
+    background-color: #C990AB;
+    color: #ffffff;
+    margin-inline-end: 10px;
+}
+

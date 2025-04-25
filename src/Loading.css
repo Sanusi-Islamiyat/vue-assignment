@@ -1,0 +1,29 @@
+.main {
+    background: repeating-linear-gradient(199deg, #651215,  #a3a8b7, #cdd8eb, #6b676d, #4A3434); 
+    width: 2000px;
+   
+    height: 100vh;
+    margin-block-start: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+  }
+  
+  img {
+    width: 50%;
+    height: 50%;
+    border: none;
+    display: block;
+  }
+  
+  
+  .loading {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+  }
+    
+    

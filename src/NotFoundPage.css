@@ -1,0 +1,25 @@
+ntf-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.ntf-img {
+    width: 500px;
+   
+}
+
+.ntf-para {
+    color: #4A3434;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+    margin-block-start: -10px;
+
+}
+
+.ntf-h{
+    color: #4A3434;
+}
