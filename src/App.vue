@@ -43,7 +43,7 @@ export default {
 
     const onClose = () => console.log("Closing modal");
 
-    // Provide global data to children via inject
+    
     provide("todos", todos);
     provide("isLoading", isLoading);
     provide("onMarkComplete", onMarkComplete);

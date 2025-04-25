@@ -10,7 +10,7 @@ export const routes = [
   {
     path: "/todo/:id",
     component: TodoDetailsModal,
-    props: route => ({ id: route.params.id }) // We'll handle data elsewhere
+    props: route => ({ id: route.params.id }) 
   },
   { path: "/not-found", component: NotFoundPage },
   { path: "/error", component: ErrorPage },
